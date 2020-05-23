@@ -231,3 +231,62 @@ for i in s:
     else:
         c += 1
 print(c)"""
+
+
+#28 in c#
+"""s1 = input("Enter s1 : ")
+s2 = input("Enter s2 : ")
+n = int(input("Enter value "))
+
+s3 = int(s1[5:])
+s4 = int(s2[5:])
+
+a = (s4-s3)*n
+
+print(a)"""
+
+#27
+"""n = int(input())
+s = 0
+while n!=0:
+    rem = n%10
+    s = s+rem*rem
+    n = n//10
+print(s)"""
+
+"""#26
+s = input("Enter string: ")
+#c = input("Enter character: ")
+s1 = s[-1::-1]
+print(s1)"""
+
+
+"""import time
+
+while True:
+  localtime = time.localtime()
+  result = time.strftime("%I:%M:%S %p", localtime)
+  print(result, end="", flush=True)
+  print("\r", end="", flush=True)
+  time.sleep(1)"""
+  
+"""import time
+while True:
+    print("hello")
+    time.sleep(2)"""
+    
+"""from threading import * 
+import time
+for i in range(5):
+    print("Hello")
+    print("Hi")
+    time.sleep(2)
+    print("Bye")
+print("BYE for threading")"""
+
+"""s = "chandu"
+z = len(s)
+if z == 6 and s[-1]=='i':
+    print(s)
+else:
+    print("Error")"""
