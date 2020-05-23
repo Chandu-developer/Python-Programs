@@ -1,0 +1,83 @@
+#Basics but very important
+
+"""a = 10
+print(a)
+print(type(a))
+print(id(a)) #This shows in which place the variable a is stored in heap memory
+
+#how to represent binary decimal octal and hexaeci
+a=1111 #decimal representation
+#for binary 0 and 1
+b = 0b1111 #0b is to represent that we taken vari is binary as 0b or 0B
+print(b)
+c = -0b1111
+print(c)
+
+#for Octal 0-7
+d = 0o777 #we can represent octal as 0o or 0O
+print(d)
+
+#for hexadecimal 0-9 and A-F and also we can use a-f
+e = 0x343e4
+f = 0X343a3
+print(e,f)
+
+#now converting other types to bin,oct,hex
+#there is a functions called bin ->binary, oct,hex
+#similarly we can convert any type to any other type
+
+a=10
+print(bin(a))
+print(oct(a))
+print(hex(a))
+
+b = 0xa
+print(b)
+
+#complex will be like c = a+bj
+#where a = real part; b = imaginary part; j = sqrt(-1)
+#in a and be we can use either int or float values
+#In real part we can take any value like deci,bin,hex,oct but imgnry part must be only decimal value
+
+#We cant convert complex and bool to int type
+#We cant convert complex and bin, hex,octa to float
+
+a='10.5'
+print(float(a))
+
+a=10
+b=10
+c=10
+#Here the id for a b c are same bcz same object can be used by multiple references here obj=10 and ref is a, b,c
+#This reusability of obj is used only in case of int bool and str but not for float complex
+#all fundamentals datatypes (int,float,complex,bool,str) are immutable types
+print(id(a))
+print(id(b))"""
+
+#Bytes datatypes:
+#Bytes must be in the range 0 to 256
+"""a=[10,20,258,24]
+b = bytes(a)
+print(b) #throws an error
+#bytes are immutable
+b[1]=30
+print(b)"""
+
+#bytearray
+#mutable
+#range is 0 to 256
+a=[10,20,24]
+b = bytearray(a)
+print(b)
+
+
+a={5,2,3,2,3,4}
+print(a)
+b[1] = 40
+
+a=5.5/2
+print(a)
+b = 5//2 #Floor division operator
+print(b)
+
+print(True & False)
