@@ -1,0 +1,62 @@
+"""mydict={1:"First",2:"Second"}
+print(mydict)
+mydict[3] = "Four" #adding a new dict
+print(mydict)
+mydict[3] = "Three" #changing the value
+print(mydict)
+mydict[4] = "Four"
+print(mydict)
+#deleting key-value pairs
+print(mydict.pop(2)) #It deletes the key pair which we gave
+print(mydict)
+print(mydict.popitem()) #It delets the last value
+print(mydict)
+
+
+#Accessing elements
+print(mydict[3]) #It gives the value at present at that key
+print(mydict)
+print(mydict.keys())
+print(mydict.values())"""
+
+"""mytu=(1,2,3,2,3,4)
+print(mytu)
+for i in mytu:
+    print(i)
+print(mytu[3])"""
+
+"""myset={1,2,3,2,3,4,5,4}
+myset.add(6)
+myset.clear()
+print(myset)"""
+
+"""a = 7
+b=float(a)
+c=int(b)
+print(b)
+print(c)"""
+
+"""name="chandu"
+age = 25
+c=25.58679
+print("My name is %s and my age is %d"%(name,age))
+print("the no is %.3f"%c)"""
+
+"""phonebook = {"John" : 938477566,"Jack" : 938377264,"Jill" : 947662781}
+for name, number in phonebook.items():
+    print("Phone number of %s is %d" % (name, number))"""
+
+    
+import time
+start = time.perf_counter()
+def dosomething():
+    print("Thread started")
+    time.sleep(10)
+    print("Thread closed")
+"""def dosomething1():
+    print("Thread1 started")
+    time.sleep(2)
+    print("thread1 closed")"""
+finish = time.perf_counter() 
+print(finish-start)
+dosomething()
