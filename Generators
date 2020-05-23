@@ -1,0 +1,70 @@
+#yield is a keyword in Python that is used to return from a function without destroying the states of 
+its local variable and when the function is called, the execution starts from the last yield statement.
+# Any function that contains a yield keyword is termed as generator.
+#This is just printing the values in a list
+#Here the empty list r stored each and evry elem into it
+#But I want one elem at a time it can be done by yield and yield returns only one elem at a time
+#so the memory space will not consume more and also time taken to execute is also very fast in case 
+of larger lists"""
+
+"""def func():
+    r=[] #empty list
+    for i in a: #for every element in a list
+        r.append(i) #storing every elem into the empty list r
+    return r #returning all the elements
+a=[2,5,4,3,6]
+b=func() #created an object for func
+print(b)"""
+
+#Now by using yield
+"""def func():
+    yield a #It returns one elem at a time but not terminate like return after the first return
+def func1():
+    for i in a:
+        if i%2==0:
+            yield i
+a=[4,3,6,5,8,0,7,2]
+print(func().__next__())
+
+for i in func1():
+    print(i)
+print(list[i])"""
+
+
+"""def func(a,n):
+    left=0
+    length = len(a)
+    right = length-1
+    while left<right:
+        mid = (left+right)//2
+        if n<a[mid]:
+            right = mid-1
+            
+        elif n>a[mid]:
+            left = mid+1
+            
+        else:
+            return mid
+a=[2,3,1,5,7,6,8,12,14]
+a.sort()
+n=5
+print(func(a,n))"""
+        
+"""def binary_search(data, value):
+    n = len(data)
+    left = 0
+    right = n - 1
+    while left <= right:
+        middle = (left + right) // 2
+        if value < data[middle]:
+            right = middle - 1
+        elif value > data[middle]:
+            left = middle + 1
+        else:
+            return middle
+    raise ValueError('Value is not in the list')
+    
+if __name__ == '__main__':
+    data = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    print(binary_search(data, 9))"""
+    
