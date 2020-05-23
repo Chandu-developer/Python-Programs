@@ -1,0 +1,60 @@
+"""
+Decorators are used to add the additional functionality to the existing function without modifying it manually
+@func_name is the syntax
+2 types of decorators 1)function decorator and 2)class decorator
+"""
+
+
+#simple function
+"""def succ(x):
+    return x*10
+z = succ(6)
+print(succ(5))
+print(z)"""
+
+#Now functions inside function
+"""def A():
+    def B():
+        print("Hi!!!This is inside function")
+    B()
+    print("This is for outside function")
+    
+A()"""
+
+#This is an e.g of function decorator
+"""def check(func): #func is just a arg name here for the func div
+    def inside(a,b):
+        if b == 0:
+            print("Can't be divided with zero")
+            return
+        func(a,b)
+    return inside
+    
+"""
+"""@check
+#It gives the o/p if you pass 2 no's but you want to add some other funtionality
+#As we know any no divided by 0 throws exception
+#So for that we are giving other func using decorators
+def div(a,b):
+    x = a/b
+    return x
+a = int(input("Enter no1 : "))
+b = int(input("Enter no2 : "))
+print(div(a,b))"""
+
+"""@check
+def add(a,b):
+    y = a+b
+    return y
+print(add(2,0))"""
+
+def print_args(func):
+    def inner_func(*args, **kwargs):
+        print(args)
+        print(kwargs)
+        return func(*args,**kwargs)
+    return inner_func
+@print_args
+def mult(a,b):
+    return a*b
+print(mult(6,5))
