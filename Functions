@@ -1,0 +1,122 @@
+#Simple function without passing args and used for loop for multiple times to return
+"""def hello():
+    print("Hello! Chandu")
+    print("How r u")
+def sendoff():
+    print("Bye Bye Chandu")
+sendoff()
+for i in range(3):
+    hello()
+print("Bye")"""
+
+#func with arguments
+"""def hello(name,age):
+    print("Hello",name)
+    print(name, " age is ",age)
+n = input("enter name ")
+m = int(input("Enter age "))
+hello(n,m)"""
+
+#using return
+"""def maxmin(n):
+    if n>10:
+        return "maximum"
+    else:
+        return "minimum"
+n = int(input())
+z = maxmin(n)
+print(z)
+
+def length(m):
+    return len(m)
+n = input()
+m = int(n)
+z = length(m)
+print(z)"""
+
+#string to int conversion
+"""s = "1010"
+z = int(s)
+a = z//10
+print(a)"""
+
+#string to base2 to int conversion
+"""z = "1101110"
+a= int(z,base=2)
+print(a)"""
+
+#Local and global variables
+"""a = 10
+def hel():
+    b = 20
+    print(b)
+    print(a)
+def bel():
+    c = 30
+    print(c)
+    print(a)
+   # print(b) Again it too shows an erroe bcz b is a local variable 
+print(a)
+#print(b) It shows an error
+hel()
+bel()"""
+
+"""a=10
+def hel():
+    global a
+    a=20
+    print(a)
+hel()
+print(a)"""
+
+"""def spam(divideBy):
+    try:
+        return 42 / divideBy
+    except ZeroDivisionError:
+        print('Error: Invalid argument.')
+
+print(spam(2))
+print(spam(12))
+print(spam(0))
+print(spam(1))"""
+
+
+#Exception handling
+"""while True:
+     try:
+         x = int(input("Please enter a number: "))
+         break
+     except ValueError:
+         print("Oops!  That was no valid number.  Try again...")"""
+
+#Mean
+"""a = input("")
+length = len(a)
+summ = sum(a)
+mean = summ/length
+print(mean)"""
+
+#mean using functions
+"""def mean(a,length):
+    summ = sum(a)
+    return summ/length       
+
+a = [3,4,5,6]
+length = len(a)
+result = mean(a,length)
+print(result)"""
+
+#mode
+"""from statistics import mode
+a = [2,3,3,2,12,3,5,4,3,3]
+print("mode is %s"%(mode(a)))"""
+
+#Mean
+"""from statistics import mean
+a = [3,4,5,6]
+print("Mean is %s"%(mean(a)))"""
+
+#medain
+from statistics import median
+a = [3,4,5,2,15]
+print("Median is %s"%(median(a)))
