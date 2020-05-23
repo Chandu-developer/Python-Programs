@@ -1,0 +1,152 @@
+#Programs on Regular Expressions
+
+import re
+a=re.compile('[a-e]') #It creates a RE class and searches for those chars case sensitive
+b=input()
+print(a.findall(b)) #It finds all the chars in the a string
+
+import re
+z="Chandu was born on 19th of 03/1995"
+a=re.compile('\d') #matches any decimal digit i.e.,[0-9]
+b=re.compile('\d+') #matches a group on [0-9] group of one or greater size
+
+c=re.compile('\w') #It is equivalent to [a-zA-Z0-9]
+d=re.compile('\w+') #It returns the group of alphanumeric character
+e=re.compile('\W') #It returns all the non alphanumerics
+
+print(a.findall(z)) #findall finds all the related content
+print(b.findall(z))
+print(c.findall(z))
+print(d.findall(z))
+print(e.findall(z))
+
+import re
+#* replaces the number of occurences of a character
+a=re.compile('ab*')
+#It shows the output as a accompanied by any number of b's.
+print(a.findall("ababbaabbbcab "))
+
+from re import split
+print(split('\W+','sords,words,ruds')) #W+ separates all the non alphanumerics and split separates from that.
+
+#Substrings
+import re
+a="Chandu is not worhaking in anyha company"
+print(re.sub('ha','**',a)) #here all ha will be changed to **. It is a case sensitive
+print(re.sub(r"\sis\s",' ** ',a)) #here it will print ** where the string is exactly is
+
+
+
+"""import re
+a=input("Enter phone number: ")
+reg = re.compile(r"\d{3}-\d{3}-\d{4}") #\d is to find integer
+if reg.match(a): #match checks the string and if matched passes true else false
+    print("Valid phone number")
+else:
+    print("Please check the phone number and enter again ")"""
+    
+    
+import re
+i = input("Enter something : ")
+reg = re.compile(r"\d{3}-\d{3}-\d{4}")
+m = reg.search(i) #It searches the entire string for perticular pattern
+print("Matching record found in the string :"+m.group())
+
+#grouping with paranthesis
+"""import re
+a=input("Enter phone number : ")
+reg = re.compile(r"(\d{3})-(\d{3}-\d{4})")
+m = reg.search(a)
+print(m.group())
+print(m.group(1))
+print(m.group(2))"""
+
+import re
+batRegex = re.compile(r'Bat(wo)?man') #The (wo)? part of the regular expression means that the pattern wo is an optional group. 
+mo1 = batRegex.search('The Adventures of Batman')
+print(mo1.group())
+mo2 = batRegex.search('The Adventures of Batwoman')
+print(mo2.group())
+
+#The * (called the star or asterisk) means “match zero or more”
+import re
+a = input()
+reg = re.compile(r"Cha(nd)*u")
+m = reg.search(a)
+print(m.group())
+
+import re
+a = input()
+reg = re.compile(r"(ha){3}")
+m = reg.search(a)
+print(m.group())
+
+import re
+a="Cell: 415-555-9999 Work: 212-555-0000"
+reg = re.compile(r"\d{3}-\d{3}-\d{4}")
+m = reg.search(a)
+print(m.group()) #it gives only the first matched string
+print(reg.findall(a)) #It gives all the matched stirngs in that particular string
+
+import re
+reg = re.compile(r"^Hello") #aret symbol (^) at the start of a regex to indicate that a match must occur at the beginning of the searched text
+reg1=re.compile(r"World$") #It searches for the string that ending with world
+m = reg.search("Hello world")
+m1 = reg.search("Hi Hello World")
+print(m.group())
+print(m1.group())
+
+import re
+a = input("Enter string :")
+reg = re.compile(r".at")
+m = reg.search(a)
+print(m.group())
+m1=reg.match(a)
+print(m1.findall())
+
+import re
+reg = re.compile(r'First Name: (.*) Last Name: (.*)') #(.*) matches anything in between
+mo = reg.search('First Name: Al Last Name: Sweigart')
+print(mo.group(1))
+
+a = input("Enter the number: ")
+try:
+    b = int(a)
+except:
+    print("Please! enter the integer number only.")
+if b>10:
+    print("High")
+else:
+    print("Low")
+    
+
+import re
+
+pattern = '^a...s$'
+test_string = 'abyss'
+res = re.match(pattern,test_string)
+if res:
+    print('Successful')
+else:
+    print('Unsuccessful')
+    
+    
+    
+
+
+
+import re
+n  = int(input())
+for i in range(n):
+    i = input('enter string ')
+    reg = re.compile(r'\d{3}-\d{3}-\d{4}')
+    m = reg.search(i)
+    c = m.group()
+    
+    if c:
+        print(c)
+    else:
+        print('error')
+    
+    
+
