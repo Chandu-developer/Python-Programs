@@ -1,0 +1,32 @@
+#This model contains both count and print operations programs
+
+
+#1)Counter is a method used to get all the occurences of items in a string check 314
+#2)count :- It is used to find a particular ele how many times it exist
+
+#Counter is in collections module
+from collections import Counter
+s = "chahandnud"
+a = Counter(s) #It returns how many times all the chars in a str s found
+b = s.count('a') #returns how many times a exists in s str
+print(a)
+print(b)
+
+#It counts the values i.e.,how many times a particular value exits
+from collections import Counter
+s = "chahandnud"
+a = Counter(s)
+z=Counter(a.values())
+print(z)
+
+#counting particular elem using numpy array
+import numpy as np
+a = np.array([2,1,3,1,4,5,2])
+print(np.sum(a==2)) #It gives no of times 2 present in array
+
+s= 123
+r ='ravi'
+c = 'ra'
+d = "Hi This is chandu"
+#print(str(s)+" " +r+" "+c) #here only one data type accepts
+print(s,r,c) #It uses any datatype
