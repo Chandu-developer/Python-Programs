@@ -346,4 +346,100 @@ for i in range(len(a)):
             c+=1
 print(c)
     
+"""from array import *
+import numpy
+arr = array('i',[1,2,3])
+a = [6,7,9]
+arr.append(4)
+arr.insert(2,8)
+z = arr.fromlist(a)
+print(z)"""
+
+#In arrays pop removes the last element and remove removes the particular element
+"""from array import *
+a = array('i',[1,2,3,4,5])
+z = a.pop()
+print(z)"""
+
+"""class A:
+    def summ(a,b):
+        return a+b
+int b = A()
+print(b.summ(2,3))"""
+
+#ADDING varying numbers - method 1
+"""def add(integers):
+    s=0
+    for i in integers:
+        s = s+i
+    return s
+l = [1,2,3]
+print(add(l))"""
+
+#above we need to change integers everytime so we use *args here
+"""def add(*args):
+    s=0
+    for i in args:
+        s = s+i
+    return s
+z = int(input("Enter numbers: "))
+for i in z:
+    x = int(input())
+print(add(x))"""
+
+"""lista =[1,2,3,4,5]
+print(*lista)"""
+
+"""s = "chandu is my friend"
+print(s[::-1])"""
+
+"""def inp(x=5):
+    print(x)
+inp()"""
+
+"""def exa(a):
+    if a >0:
+        return 1
+    else:
+        return -1
+x = int(input("Enter value"))
+print(exa(x))"""
+
+"""def aaa(*args):
+    for i in args:
+        print(i)
+n = int(input())
+for j in n:
+    print(aaa(j))"""
+    
+"""def bbb(**kwargs):
+    for name,values in kwargs.items():
+        print(name,values)
+print(bbb(value1=1, value2=2, value3=3))"""
+
+"""def v(a,b=22,c=[]):
+    pass
+print(v.__defaults__)"""
+
+#triangle pattern
+"""def pyfunc(r):
+    for x in range(r):
+        print(' '*(r-x-1)+'*'*(2*x+1))    
+pyfunc(9)
+
+def fun(r):
+    for x in range(r):
+        print(' '*(r-x+1)+'*'*(2*x+1))
+fun(6)"""
+
+"""s= "chandu"
+s1 = s.capitalize()
+print(s1)
+
+from math import *
+print(ceil(3))"""
+
+a = "53,5345"
+print(a[0:2]+a[3:7])
+
 
