@@ -332,3 +332,129 @@ print(list(e))"""
 """a=[3,2,4,5]
 e=map(lambda x:x+2,a)
 print(list(e))"""
+
+#string palindrome or not
+"""def reverse(s):
+    return s[::-1]
+def isPalandrome(s):
+    rev = reverse(s)
+    
+    if(rev == s):
+        return True
+    return False
+
+s = "malayalam"
+ans = isPalandrome(s)
+if ans == 1:
+    print("yes")
+else:
+    print("No")"""
+
+
+"""import operator
+operator.mod(3,4)"""
+
+#local and global variables
+"""foo =2
+def f():
+    global foo
+    foo = 3
+    print(foo)"""
+    
+"""import time
+start = time.perf_counter()
+def dosome():
+    print("after 5 secs")
+    time.sleep(1)
+    print("done sleeping")
+dosome()
+dosome()
+finish = time.perf_counter()
+print("Finished in", (round(finish - start),2) )  """ 
+             
+"""n = input("Enter ")
+z = n[::-1]
+if n == z:
+    print("PAL")
+else:
+    print("No")"""
+    
+"""n = input("Enter ")
+z = n.split(" ")
+alist = z[::-1]
+a = str(alist)
+print(a)"""
+
+"""n = int(input("Enter "))
+for i in range(2,n-1):
+    if n%i ==0:
+        print("not a prime")
+        break
+    else:
+        print("prime")
+        break"""
+        
+"""n = int(input("Enter: "))
+m=n
+su = 0
+while n!=0:
+    rem = n%10
+    su += rem*rem*rem
+    n = n//10
+if su == m:
+    print("armstrong")
+else:
+    print("not")"""
+
+"""def chandu(name):
+    print("Hello " + name + " Good morning")
+n = input()
+chandu(n)"""
+
+#even or not using functions:
+"""def even_or_odd(num):
+    if num%2 == 0:
+        return 1
+    else:
+        return 0
+n = int(input())
+if even_or_odd(n) == 0:
+    print("odd")
+else:
+    print("eVEN")"""
+
+"""class Shark:
+    animal_type = "fish"
+
+new_shark = Shark()
+print(new_shark.animal_type)
+
+
+class Shark:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+name=input("Enter name ")
+age = int(input("Enter age "))
+new_shark = Shark()
+print(new_shark.name)
+print(new_shark.age)"""
+
+"""class Shark(name,age):
+    name = 0
+    age = 1
+name=input("Enter name ")
+age = int(input("Enter age "))
+if name == 0:
+    print(Shark.name)
+else:
+    print(Shark.age)"""
+    
+"""b = input()
+z = b.lower()
+print(z)"""
+
+#getting list of all keys and values in a dict
+d = {1:'Ravi',2:'chandu',3:'Surya',4:'Teja'}
+print(d.keys() + d.values())
+
