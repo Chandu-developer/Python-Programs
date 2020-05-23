@@ -1,0 +1,36 @@
+
+"""
+Python 3.2 has a support for %z format for parsing a string into datetime object.
+
+
+"""
+
+
+#import datetime as dt
+"""d = dt.datetime.now() #It gives the present time
+print(d)
+print(d.year) #It gives the year similarly all below
+print(d.month)
+print(d.day)
+print(d.hour)
+print(d.strptime)"""
+
+#creatind date :- there is a datetime class in the module datetime
+"""import datetime as dt
+#These all are for year,month, and date and day commands
+x = dt.datetime(2020,5,17) #It gives the date and time
+print(x)
+print(x.strftime("%Y")) #shows year in 2020
+print(x.strftime("%y")) #shows last 2 digits in a yr i.e.,20
+print(x.strftime("%m")) #shows which month it is in no
+print(x.strftime("%B")) #shows month name
+print(x.strftime("%b")) #shows the first 3 chars of the mnth
+print(x.strftime("%a")) #shows short form of day like wed,mon
+print(x.strftime("%A"))""" #shows full form of dat like Monday,Tuesday,Saturday
+
+#time between dates
+"""from datetime import datetime
+a = datetime(2016,10,06,0,0,0) b = datetime(2016,10,01,23,59,59)
+print(a-b) # datetime.timedelta(4, 1)
+print((a-b).days) # 4 (a-b).total_seconds() """
+
