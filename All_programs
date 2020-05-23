@@ -1,0 +1,39 @@
+#avg of nos
+"""n = int(input("Enter n value "))
+a = []
+for i in range(0,n):
+    b = int(input("Enter element"))
+    a.append(b)
+avg = sum(a)/n
+print(avg)"""
+
+"""#swaping of 2 nos
+a=10
+b=20
+#without using temp
+a = a+b
+b = a-b
+a = a-b
+
+temp=a
+a=b
+b=temp
+print(a)
+print(b)"""
+
+#n+nn+nnn
+"""n=int(input("Enter a number n: ")) 
+temp=str(n) #converts the above int to str
+t1=temp+temp #if n =5 then it will be not 10 it is str so 55
+t2=temp+temp+temp #simillary it is 555
+comp=n+int(t1)+int(t2) #again it is converted into int value
+print("The value is:",comp) #shows the o/p"""
+
+#Reversing a no
+"""n = 123
+s = 0
+while n!=0:
+    r = n%10
+    s = s*10 + r
+    n = n//10
+print(s)"""
