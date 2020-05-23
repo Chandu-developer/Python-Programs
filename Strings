@@ -1,0 +1,334 @@
+# About Inbuilt functions in python
+#1)sorted:- Its sorts the string or list easy to find anagrams using this
+#2)split(): We can split the string by using s.split(" "), it may be space, any special char anything
+#3)len():-It gives us the length of the string
+#4)append():-We can append some value to list, array, set anything. s.append('z'):- It appends z to the s string
+#5)replace():-It replaces the char with some other char e.g.,:-s.replace('a','$') :-It replaces a with $ in string s
+#6)islower():-used to check whether the char is lower or not
+#7)isupper():-used to check whether the char is upper or not
+#8)isalpha():-it checks all the alphabets in a string
+#9)find():- To find some substring in a string e.g., is in 201 line
+#10)title():-It shows the title version i.e.,every first letter in the word of a string is capital
+#11)swapcase():-It returns all lower case chars to upper and all upper case chars to lower
+#12)str.maketrans("str","translate_str"):-It changes the str to translate str depends on condition see 219 line
+#13)For string.ascii refer line 237
+#14)strip():-This method is used to remove the unwanted spaces check line 254
+#14)rstrip():-It removes the unwanted spaces from the right side
+#15)lstrip():-It removes the unwanted spaces from the left side
+#16)Replace(x,y):-takes two arguments lets say x->old and y->new and it replaces old argument with new argument check line 269
+#17)isalpha,isupper,islower check line 280
+#18)join():- check 289
+#19)startswith("some char to check",2) :-check in line 298
+#20)endswith("") :-check in 298
+#Difference between string and raw string(r):-string takes \n as new line but raw string considers it as a part of string check 314
+
+
+
+#Length of string without inbuilt
+"""s = input("Enter string ")
+c=0
+for i in s:
+    if i==" ":
+        continue
+    else:
+        c += 1
+print(c)"""
+
+#reverse a string
+"""s = "chandu is a programmer"
+l = len(s)
+#This is way using slicing
+z = s[::-1]
+print(z)"""
+"""i=0
+if i<l:
+    s[i]=s[l-1]
+print(s)"""
+    
+
+"""s = "chandu is a programmer"
+z = s.split(" ")
+print(z)
+for i in z:
+    x = z[::-1]
+print(x)"""
+
+#adding colon after every character using join
+"""c = "chandu"
+print("\n".join(c))""" #It adds new line after every char
+
+"""s = []
+
+s.append('a')
+s.append('b')
+s.append('c')
+
+s.pop()
+s.pop()
+print(s)"""
+
+"""s = "This is chandu"
+z = s.split(" ")
+for i in z:
+    if i.contains("chandu"):
+        print("yes")
+    else:
+        print("no")"""
+        
+#finding occurance of s and keep $ in that place
+"""s = "This is chandus"
+z = s.replace('s','#')
+        
+print(z)"""
+
+#To remove n th char in a string
+"""def remove(s,n):
+    first = s[:n]
+    second = s[n+1:]
+    return first+second
+s = "Ravichandu"
+n = 3
+res = remove(s,n)
+print(res)"""
+
+#Anagram or not
+"""s1 = "anagram"
+s2 = "nagaram"
+
+s3 = sorted(s1)
+s4 = sorted(s2)
+
+if s3==s4:
+    print("Anagrams")
+else:
+    print("not a anagrams")"""
+
+#To exchange first char and last char
+"""s = "Hi chandu"
+z = s[-1]+s[1:-1]+s[0]
+print(z)"""
+
+#To count the vowels in a string
+"""s = "This is chandu"
+c = 0
+for i in s:
+    if i=='a' or i=='e' or i=='i' or i=='o'or i=='u':
+        c += 1
+print(c)"""
+
+#To replace every blank space with some special char
+"""s = "This is chandu"
+z = s.replace(" ","$")
+print(z)"""
+
+#Length of string without using library
+"""s = "This is chandu"
+c = 0
+for i in s:
+    c += 1
+print(c)"""
+
+#To remove odd index values of string
+"""s = "chandu"
+s1 = ""
+for i in range(len(s)):
+    if i%2==1:
+        s1 = s1+s[i]
+print(s1)"""
+
+#no of words in a string and no of cahrs in string
+"""s = "This is chandu"
+s1 = s.split(" ")
+s2 = len(s1)
+s3 = len(s)
+print(s2,",",s3)
+print(s3)"""
+
+#To count the lower chars in string
+"""s = "This Is CHandu"
+c=0
+for i in s:
+    if i.islower():
+        c += 1
+print(c)"""
+
+#Palindrome or not
+"""s = "malayalam"
+z = s[::-1]
+if s==z:
+    print("Palindrome")
+else:
+    print("Not a palindrome")"""
+    
+#counting no of upper and lower chars in a string
+"""s = "This Is ChaNdu"
+c1=0
+c2=0
+c3=0
+for i in s:
+    if i.islower():
+        c1 += 1
+    elif i.isupper():
+        c2 += 1
+    else:
+        c3 += 1
+print(c1)
+print(c2)
+print(c3)"""
+
+#To find no of chars and nums in a string
+"""s = "Thi3s is2 cha34ndu"
+c1=0
+c2=0
+for i in s:
+    if i.isalpha():
+        c1 += 1
+    else:
+        c2 += 1
+print(c1)
+print(c2)"""
+
+#new string with first 2 and last 2 chars
+"""s = "chandu"
+z = s[0:2]+s[-2:]
+print(z)"""
+
+#To count some string in a string
+"""s = "Hi this hi is hi chandu"
+a = "hi"
+z = s.lower()
+m = []
+m = z.split(" ")
+c=0
+for i in range(0,len(m)):
+    if m[i] == a:
+        c += 1
+print(c)"""
+        
+#To find substring in a string
+"""s = "This is chiandi"
+a = "hi"
+if s.find(a)==-1:
+    print("not find")
+else:
+    print("find")"""
+    
+#basic inbuilt funcs
+"""s = "chaNdu"
+print(s.upper())
+print(s.capitalize())
+print(s.lower())
+print(s.casefold())
+print(s.title()) #It shows the title version i.e.,every first letter in the word of a string is capital
+print(s.swapcase()) #It returns all lower case chars to upper and all upper case chars to lower"""
+
+#Translation table:
+"""my_translate = str.maketrans("aeiou","12345")
+my_str = "This is chandu"
+translated = my_str.translate(my_translate)
+print(translated)"""
+
+#To change all the i's whith a
+"""my_translate = str.maketrans("i","a") #It changed all i's to a's in the string
+my_str = "This is schiandu"
+translated = my_str.translate(my_translate)
+print(translated)
+
+#To remove all the vowels in a string using translate
+my_translate = str.maketrans("aeiou",None)
+my_str = "This is chandu"
+translated = my_str.translate(my_translate)
+print(translated)"""
+
+#string ascii
+"""import string
+print(string.ascii_letters) #Ishows all the chars a-z and also A-Z
+print(string.ascii_lowercase) #It shows all the lower case alphabets
+print(string.ascii_uppercase) #It shows all the upper case alphabets
+print(string.digits)
+print(string.octdigits)
+print(string.hexdigits)"""
+
+"""s = "   chandu    "
+print(s.strip()) #It removes all the leading spaces
+print(s.rstrip()) #It removes all the spaces from the right side
+print(s.lstrip()) #It removes all the spaces from the left side"""
+
+#Reversed inbuilt func
+"""s = "chandu is"
+z = s.split()
+for i in z:
+    print(i[::-1],end = " ")"""
+
+#split using ,
+"""s = "chandu,Ravi,Surya,Teja,Padma,Trinadh"
+print(s.split(","))"""
+
+#Replace
+"""s = "chandu wanted to be in good role"
+print(s.replace("wanted","wants"))
+z = "chandu wanted to be in good role and he wanted to see his parents and brother"
+print(z.replace("wanted","wants"))"""
+
+#Replace with count also
+"""s = "Chandu resigned in CTS. Chandu wants to join in other organisation."
+print(s.replace("Chandu","Ravi",1))"""
+
+#isalpha,isupper,islower
+"""s = "chandu123"
+print(s.isalpha())
+print(s.isupper())
+print(s.islower())
+print(s.isalnum()) #It checks for both alpha and numeric
+print(s.isspace()) #It checks whether the string contains any spaces or not"""
+
+#Join
+"""s = ["chandu","has","no", "job","right","now"]
+print(" ".join(s)) #It joins all the words with space
+print("---".join(s)) #It joins all the words with three hipens i.e.,---"""
+
+#str.count(sub[, start[, end]])
+"""s = "This is chisandu"
+print(s.count("is"))"""
+
+#startswith and endswith
+"""s = "This is chandu"
+print(s.startswith("Th"))
+print(s.startswith("hi"))
+print(s.startswith("is",2)) #It gives True bcz s[2]=i from s[2] it checks searching
+print(s.startswith(("That","This"))) #It checks whether the string starts with that or this depends on that it gives true or false"""
+
+#Endswith
+"""s = "This is chandu."
+print(s.endswith("chandu."))
+print(s.endswith((",","."))) #It checks whether the string ends with ravi or chandu and provides result
+print(s.endswith(("#","@")))"""
+
+
+#Difference between string and raw string(r):-string takes \n as new line but raw string considers it as a part of string
+"""s = "cha\nndu"
+print(s)
+z = r"cha\nndu"
+print(z)"""
+
+"""from collections import Counter
+a = [2,1,3,2,3,1,2,3,2,1,3,5,4,6,4,6,2,4,1,3]
+counter = Counter(a).most_common(2) #It counters every data and it gives the most common digits in the array
+print(counter)"""
+
+"""def addition(n):
+    return n*n
+a=(1,2,3,4)
+result = map(addition,a)
+print(result)
+print(list(result))"""
+
+ 
+
+"""ele = [2,1,4,5]
+e = map(lambda x:x*2,ele)
+print(list(e))"""
+
+"""a=[3,2,4,5]
+e=map(lambda x:x+2,a)
+print(list(e))"""
