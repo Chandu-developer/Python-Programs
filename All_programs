@@ -101,3 +101,215 @@ for i in range(len(a)):
     a[i],a[min_index] = a[min_index],a[i]
 print(a)
 
+#prog1
+"""l=[]
+for i in range(2000,3001):
+    if i%7==0 and i%5!=0:
+        l.append(str(i))
+print(",".join(l))"""
+
+#prgo2
+"""n=int(input())
+fact=1
+for i in range(1,n+1):
+    fact *= i
+print("The factorial of number is",fact)"""
+
+#prog4
+"""n=input()
+a=n.split(',')
+print(a)
+print(tuple(a))
+print(set(a))"""
+
+"""class A(object):
+    def getstring(self):
+        self.s=input()
+    def printstr(self):
+        print(self.s.upper())
+a=A()
+a.getstring()
+a.printstr()"""
+
+#prog8
+"""s=input()
+n=[i for i in s.split(',')]
+n.sort()
+print(n)"""
+
+"""s=input()
+n=s.split(" ")
+n.sort()
+print(' '.join(n))"""
+
+
+#prog9
+"""n=int(input())
+for i in range(0,n):
+    s=input()
+    z=s.upper()
+    print(z)"""
+"""lines = []
+while True:
+    s = input()
+    if s:
+        lines.append(s.upper())
+    else:
+        break;
+
+for sentence in lines:
+    print(sentence)"""
+    
+"""l=[]
+n=int(input())
+for i in range(0,n):
+    s=input().upper()
+    l.append(s)
+for i in l:
+    print(i)"""
+
+#prog10
+"""s="Hi this is this is chandu hi"
+b=s.lower()
+z=b.split(" ")
+z.sort()
+a=set(z)
+print(" ".join(a))"""
+
+#Prog12
+"""a=[]
+for i in range(1000,3001):
+    if i%2==0:
+        a.append(i)
+print(str(a))"""
+
+#prog13
+"""c1=0
+c2=0
+s="hello chan123du 456"
+for i in s:
+    if i.isalpha():
+        c1+=1
+    elif i.isdigit():
+        c2+=1
+    else:
+        continue
+print(c1)
+print(c2)"""
+
+#prog14
+"""s="ThIs Is ChaNdu"
+c1=0
+c2=0
+for i in s:
+    if i.isupper():
+        c1+=1
+    elif i.islower():
+        c2+=1
+    else:
+        continue
+print(c1)
+print(c2)"""
+
+#prog15
+"""n=int(input())
+a=str(n)
+a1=a+a
+a2=a+a+a
+a3=a+a+a+a
+print(n+int(a1)+int(a2)+int(a3))"""
+
+#prog16
+"""a=[1,2,6,3,4,5]
+for i in a:
+    if i%2==1:
+        z=i*i
+        print(z)"""
+        
+#From here all short programs based on basics
+#converting integer to string
+"""n=133
+z=str(n)
+print(z)"""
+
+"""def string(n):
+    z=str(n)
+    print(z)
+n=int(input())
+string(n)"""
+
+#taking 2 ints in string and making their sum
+"""def summ(s1,s2):
+    s3=int(s1)
+    s4=int(s2)
+    print(s3+s4)
+s1=input()
+s2=input()
+summ(s1,s2)"""
+
+#to print highest string
+"""def length(a,b):
+    c=len(a)
+    d=len(b)
+    if c>d:
+        print(a)
+    else:
+        print(d)
+s1=input()
+s2=input()
+length(s1,s2)"""
+
+#even or odd
+"""def eo(a,b):
+    if a%2==0 and b%2==0:
+        print("even")
+    else:
+        print("odd")
+n=int(input())
+m=int(input())
+eo(n,m)"""
+
+"""import math
+def printt():
+    for i in range(1,21):
+        z=i*i
+        if z>1 and z<=21:
+            print(z)
+printt()"""
+
+"""a=[1,2,3,4,5,6,7,8,6,7]
+z=len(a)/2
+b=int(z)
+print(a[:b])
+print(a[b:])"""
+
+
+        
+
+"""def func(x,y):
+    y=x/2
+    print(y)
+    
+try:
+    func(6)
+except:
+    print("Can't be divided by 0")
+finally:
+    print("The end")"""
+    
+"""a="dbcaba"
+for i in a:
+    
+    if a[i]==a[i+1]:
+        print(i)
+        break"""
+        
+
+"""a='chandu'
+b='hadducn'
+if sorted(a)==sorted(b):
+    print("Anagram")
+else:
+    print("Not a Anagram")"""
+    
+
