@@ -312,4 +312,38 @@ if sorted(a)==sorted(b):
 else:
     print("Not a Anagram")"""
     
+#removing ith char
+"""a='this is chandu'
+s=''
+n=3
+for i in range(0,len(a)):
+    if i+1!=n:
+        s=s+a[i]
+print(s)"""
+
+#finding substring in a string
+"""a='this is chandu'
+b='chandu'
+if a.find(b)==-1:
+    print('no')
+else:
+    print('yes')"""
+    
+#print even nos of words in a string
+"""a= 'this is a chandu his'
+b = a.split(' ')
+print(b)
+for i in b:
+    if len(i)%2==0:
+        print(i)"""
+        
+a='this is'
+b='tuig '
+c=0
+for i in range(len(a)):
+    for j in range(len(b)):
+        if a[i]==b[j]:
+            c+=1
+print(c)
+    
 
