@@ -458,3 +458,171 @@ print(z)"""
 d = {1:'Ravi',2:'chandu',3:'Surya',4:'Teja'}
 print(d.keys() + d.values())
 
+
+
+#capitalize 1st char in a string
+"""str = 'chandu'
+s = "Hi This is chandu. He is preparing for DS"
+substring = "is"
+a=str.capitalize()
+print(a)
+lens = len(str)
+print(lens)
+count = s.count(substring)
+print(count)
+res = s.endswith('for DS.')
+print(res)
+res = s.endswith('for DS')
+print(res)"""
+
+#replacing h and H with $
+"""s = "Hi This is chandu"
+s = s.replace('h','$')
+s = s.replace('H','$')
+print(s)"""
+
+#to reomove nth char in a string
+"""def remove(string, n):  
+      first = string[:n]   
+      last = string[n+1:]  
+      return first + last
+string=input("Enter the sring:")
+n=int(input("Enter the index of the character to remove:"))
+print("Modified string:")
+print(remove(string, n))"""
+
+#anagrams or not
+"""s1 = input()
+s2 = input()
+if(sorted(s1)==sorted(s2)):
+    print("anagram")
+else:
+    print("not anagram")"""
+    
+#to exchange first and last chars in a string
+"""def exchange(string):
+    return string[-1:]+string[1:-1]+string[:1]
+string = input("Enter string ")
+print(exchange(string))"""
+
+#count the vowels
+"""s = input("Enter string ")
+count = 0
+for i in s:
+    if(i=='a' or i=='e' or i=='i' or i=='o'or i=='u'):
+        count = count+1
+print(count)"""
+    
+#To replace blank space with '
+"""s = input("Enter string")
+s = s.replace(' ','-')
+print(s)    """
+
+#Length of string
+"""s = input("enter string ")
+count = 0
+for i in s:
+    count = count+1
+print(count)"""
+
+#To get odd chars in a string
+"""def odd(string):
+    str1 = ""
+    for i in range(len(string)):
+        if i%2 == 0:
+            str1 = str1 + string[i]
+    return str1
+string = input("Enter string ")
+print(odd(string))"""
+
+#count the number of lowercase letters in a sting
+"""s = "THIS is Chandu"
+count = 0
+for i in s:
+    if(i.islower()):
+        count = count+1
+print(count)"""
+
+#calculate no of upper and lower case letters in a string
+"""s = "THIS is chandu"
+c1=0
+c2=0
+for i in s:
+    if(i.islower()):
+        c1 = c1+1
+    else:
+        c2 = c2+1
+print(c1 , c2)"""
+
+#count the number of digits and chars in a string
+"""s = "THIS is cha555ndu9"
+c1=0
+c2=0
+for i in s:
+    if(i.isdigit()):
+        c1=c1+1
+    else:
+        c2 = c2+1
+print(c1 , c2)"""
+
+#string made of first 2 and last 2 chars in a string
+"""s = "THIS is chandu"
+alist = list(s)
+new = s[:2] + s[-2:]
+print(new)"""
+
+#to find number of occurences of a word
+"""s = input()
+w = input()
+a = []
+count = 0
+a = s.split(" ")
+for i in range(0,len(a)):
+    if(a[i] == w):
+        count = count+1
+print(count)"""
+
+#to find substring present in a string or not
+"""string=input("Enter string:")
+sub_str=input("Enter word:")
+if(string.find(sub_str)==-1):
+      print("Substring not found in string!")
+else:
+      print("Substring in string!")"""
+    
+
+
+# Formatting of Integers 
+"""String1 = "{0:b}".format(16) 
+print("\nBinary representation of 16 is ") 
+print(String1) 
+  
+# Formatting of Floats 
+String1 = "{0:e}".format(165.6458) 
+print("\nExponent representation of 165.6458 is ") 
+print(String1) 
+  
+# Rounding off Integers 
+String1 = "{0:.2f}".format(1/6) 
+print("\none-sixth is : ") 
+print(String1)"""
+
+#reversing a string
+"""s = "chandu"
+r = s[::-1]
+print(r)"""
+
+#adding and sorting 2 lists
+"""a = []
+b = []
+n1 = int(input())
+n2 = int(input())
+for i in range(1,n1+1):
+    c = int(input())
+    a.append(c)
+for i in range(1,n2+1):
+    d = int(input())
+    b.append(d)
+new = a+b
+new.sort()
+print(new)"""
