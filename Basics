@@ -81,3 +81,55 @@ b = 5//2 #Floor division operator
 print(b)
 
 print(True & False)
+
+
+"""import random
+print(random.randint(1,10)) #It provides some random integer between 1 and10"""
+
+"""We can also import multiple modules at the same time as below:
+    import random,time, sockets,pandas
+    Similarly multiple functions
+    from math import sin, cos,tan"""
+
+"""def square():
+    import math
+    print(math.sqrt(4))
+print(math.sqrt(9))
+square()"""
+
+#Ternary operator
+"""n=5
+m="Greater than 2" if n>2 else "Less than 2"
+print(m)"""
+#Simple if-else
+"""n=5
+if n>2:
+    print("Greater than 2")
+elif n<2:
+    print("Less than 2")
+else:
+    print("Equal to 2")"""
+    
+"""def break_loop():    
+    for i in range(1, 5):        
+        if (i == 7):            
+            return(i)        
+        print(i)    
+    return(5)
+break_loop()"""
+
+#Dict
+"""a = {"a":1,"b":2,"c":3}
+for key in a:
+    print(key)"""
+    
+#while
+"""i=1
+while i<=5:
+    print(i)
+    i += 1"""
+
+#Array
+from array import *
+my_arr = array('i',[2,3,1,4,5])
+print(my_arr[2])
