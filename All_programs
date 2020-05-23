@@ -565,4 +565,436 @@ print(ceil(3))"""
 a = "53,5345"
 print(a[0:2]+a[3:7])
 
+#incremwnt by 3
+"""for i in range(2,30,3):
+    print(i)"""
+    
+#swap with temp
+"""a = int(input())
+b = int(input())
+a=a+b
+b=a-b
+a=a-b
+print(a,b)"""
+
+#with temp
+"""a = int(input())
+b = int(input())
+temp =a
+a=b
+b=temp
+print(a,b)"""
+
+#make as n+nn+nnn e.g:- n=5 5+55+555
+"""n = int(input())
+temp = str(n)
+temp1 = temp+temp
+temp2 = temp+temp+temp
+z = n+int(temp1)+int(temp2)
+print(z)"""
+
+#reverse a number e.g:- 123 to 321
+"""n = int(input("enter number"))
+rev = 0
+while(n>0):
+    m = n%10
+    rev = rev*10+m
+    n = n//10
+print(rev)"""
+
+#positive or negative number
+"""n = int(input())
+if(n>=0):
+    print("+ve")
+else:
+    print("-ve")"""
+
+#takes 5 sub marks and finds grade
+"""sub1=int(input("Enter marks of the first subject: "))
+sub2=int(input("Enter marks of the second subject: "))
+sub3=int(input("Enter marks of the third subject: "))
+sub4=int(input("Enter marks of the fourth subject: "))
+sub5=int(input("Enter marks of the fifth subject: "))
+avg = (sub1+sub2+sub3+sub4+sub5)/5
+if(avg>=90):
+    print("Grade: A")
+elif(avg>=80&avg<90):
+    print("Grade: B")
+elif(avg>=70&avg<80):
+    print("Grade: C")
+elif(avg>=60&avg<70):
+    print("Grade: D")
+else:
+    print("Grade: F")"""
+
+#palindrome or not
+"""n = int(input())
+temp = n
+rev = 0
+while(n>0):
+    rem = n%10
+    rev = rev*10+rem
+    n = n//10
+if(rev == temp):
+    print("Palindrome")
+else:
+    print("not")"""
+    
+#odd value with in the range
+"""lower=int(input("Enter the lower limit for the range:"))
+upper=int(input("Enter the upper limit for the range:"))
+for i in range(lower,upper+1):
+    if(i%2!=0):
+        print(i)"""
+        
+#count the number of digits in the given no
+"""n=int(input("Enter number:"))
+count=0
+while(n>0):
+    count=count+1
+    n=n//10
+print("The number of digits in the number are:",count)"""
+
+#print nos which r not divisible by 2 and 3 in a range
+"""for i in range(0,51):
+    if(i%2 != 0 & i%3 != 0):
+        print(i)"""
+
+#make sum of n numbers
+"""n=int(input("Enter a number: "))
+a=[]
+for i in range(1,n+1):
+    print(i,sep=" ",end=" ")
+    if(i<n):
+        print("+",sep=" ",end=" ")
+    a.append(i)
+print("=",sum(a))
+ 
+print()"""
+
+#print the date is valid or not and print the incremented date
+"""date = int(input("Enter date :"))
+dd,mm,yy = date.split('/')
+dd = int(dd)
+mm = int(mm)
+yy = int(yy)
+if(mm==1 or mm==3 or mm==5 or mm==7 or mm==8 or mm==10 or mm==12):
+    max1=31
+elif(mm==4 or mm==6 or mm==9 or mm==11):
+    max1=30
+elif(yy%4==0 and yy%100!=0 or yy%400==0):
+    max1=29
+else:"""
+
+#armstrong or not
+"""n=int(input("Enter any number: "))
+a=list(map(int,str(n)))
+b=list(map(lambda x:x**3,a))
+if(sum(b)==n):
+    print("The number is an armstrong number. ")
+else:
+    print("The number isn't an arsmtrong number. ")"""
+    
+               #String
+#string palindrome or not
+"""s = "malayam"
+stringlength=len(s) # calculate length of the list
+slicedString=s[stringlength::-1] # slicing 
+#print (slicedString) # print the reversed string
+if(s == slicedString):
+    print("palindrome")
+else:
+    print("not a palindrome")"""
+    
+#reverse words in a string
+"""s = input("Enter name:")
+
+print(s)"""
+
+#sum of 2 no's
+"""a = int(input())
+b = int(input())
+sum = a+b
+print("sum of {0} and {1} is {2}".format(a,b,sum))"""
+
+#fact of number
+"""def fact(n):
+    return 1 if(n==1 or n==0) else n*fact(n-1)
+num = 5; 
+print("Factorial of",num,"is", 
+fact(num)) """
+
+#simple interest
+"""principle = int(input())
+Rate  = int(input())
+years = int(input())
+SI = ((principle*Rate*years)/100)
+print(SI)
+
+# Calculates compound interest  
+CI = principle * (pow((1 + rate / 100), time))"""
+
+#area of circle = pi*r*r
+"""def area(r):
+    pi = 3.14
+    return pi*(r*r)
+ra = int(input())
+print(area(ra))"""
+
+#prime or not
+"""n = int(input())
+if(n>1):
+    for i in range(2,n//2):
+        if(n%i==0):
+         print("not a prime")
+         break
+    else:
+        print("prime")
+else:
+    print("not a prime")"""
+
+#ASCII values
+"""a = input()
+print("The ASCII value of " +a+ " is",ord(a))"""
+
+#sum of 1st n natural numbers
+"""n = int(input())
+sum = 0
+for i in range(1,n+1):
+    sum = sum + (i*i)
+print(sum)"""
+
+#largest elem in an array
+"""def largest(arr,n): 
+  
+    # Initialize maximum element 
+    max = arr[0] 
+  
+    # Traverse array elements from second 
+    # and compare every element with  
+    # current max 
+    for i in range(1, n): 
+        if arr[i] > max: 
+            max = arr[i] 
+    return max"""
+  
+# Driver Code 
+"""arr = [10, 324, 45, 90, 9808] 
+#n = len(arr) 
+Ans = largest(arr,n) 
+print ("Largest in given array is",Ans)"""
+  
+#leap year or not
+"""year = int(input("Enter year"))
+if(year%4==0 and year%100!=0 or year%400==0):
+    print("leap year")
+else:
+    print("not a leap year")"""
+
+#converting height from cm to feet and inches
+"""height = float(input("Enter height (in cms) "))
+feet = height//30.48
+print(float(feet))"""
+
+#prime factors of a number
+"""n = int(input("Enter number"))
+i = 1"""
+
+#divisors of an integer
+"""n = int(input("Enter number"))
+for i in range(1,n+1):
+    if(n%i == 0):
+        print(i)"""
+
+#number that is divisor by 5 and 7
+"""n = int(input("Enter number "))
+if(n%5 == 0 and n%7 == 0):
+    print(n)"""
+    
+#table of given number
+"""n = int(input("Enter number "))
+for i in range(1,11):
+    print(n,"*",i ,"=" ,n*i)"""
+    
+#largest even and odd no in a list
+"""n = int(input("Enter number"))
+b = []
+for i in range(0,n):
+    a = int(input())
+    b.append(a)
+c = []
+d = []
+for i in b:
+    if(i%2 == 0):
+        c.append(i)
+    else:
+        d.append(i)
+c.sort()
+d.sort()
+print(c[-1],d[-1])#-1(negative values gives the last digits in the array"""
+
+#armstrong number or not
+"""n = int(input())
+a = list(map(int,str(n)))
+b = list(map(lambda x:x**3,a))
+if(sum(b) == n):
+    print("armstrong")
+else:
+    print("not a armstrong")"""
+    
+#sum of -ve numbers
+"""n = int(input())
+a = []
+for i in range(0,n):
+    b = int(input())
+    a.append(b)
+sum1=0
+sum2=0
+sum3=0
+for j in a:
+    if(j>0):
+        if(j%2 == 0):
+            sum1 = sum1+j
+        else:
+            sum2 = sum2+j
+    else:
+        sum3 = sum3+j
+print("Sum of all positive even numbers:",sum1)
+print("Sum of all positive odd numbers:",sum2)
+print("Sum of all negative numbers:",sum3)"""
+
+
+
+"""import os
+os.getcwd()
+
+lista = [1,1,2,3,3,4,3,4]
+print(set(lista))"""
+
+"""st = "chandua"
+lista = list(st)
+se = set(lista)
+print(se)"""
+
+#Inheritance examples:-
+"""class Person:
+    def __init__(self,fname,lname):
+        self.fname = fname
+        self.lname = lname
+    
+class Student(Person):
+    def stuAge(self,age):
+        self.age = age
+    def printname(self):
+        print(self.fname, self.lname,self.age) 
+
+X = Student('chasc','adasd',24)
+X.printname()"""
+
+"""lista = [1,2,3,5,6]
+lista[3] = 4
+print(lista)
+tup = (1,2,3,5,6)
+tup[3] = 4
+print(tup)"""
+
+#ternary operator:
+"""a=2
+b=5
+mini =a if a<b else b
+print(mini)"""
+
+"""li = [1,2,3,4,5,6,8]
+print(li[-4:-2])"""
+
+"""sy = 'cHaNdU'
+print(sy.swapcase())"""
+
+"""a,b = 2,3
+a,b=b,a
+print(a,b)
+z = chr(52)
+print(z)"""
+
+#to remove spaces in a sentencce
+"""st = "aaa bbb ccc ddd"
+z = ''.join(st.split())
+print(z)
+
+s = "hi this is ravi"
+#x = s.split(' ')
+print(s)"""
+
+#To check the list of keywords
+"""import keyword
+print(keyword.kwlist)"""
+
+#nested lists:
+"""lista = [1,2,[2,3,4,5],6,8]
+print(lista)
+print(lista[2])
+print(lista[1])
+print(lista[2][2])"""
+
+#to get some info about the inbuilt functions like max,min, insert....,
+"""z = help(min)
+print(z)"""
+
+#to get all the inbuilt classes in the math lib:-
+"""import math
+z = dir(math)
+print(z)"""
+
+#addition using operator and also without using arthmetic operators
+"""import operator
+import math
+print(operator.add(2,3))
+print(operator.sub(2,3))
+print(operator.mul(2,3))
+print(operator.pow(2,3))
+print(int(math.sqrt(25)))"""
+
+#how to use non local variable
+"""class A:
+    def counter():
+        num=0
+    def incre():
+        nonlocal num
+        num += 1"""
+
+#Fizz game
+"""alist = [1,2,3,4,5,6,7,8,9,15,30,0]
+for i in alist:
+    if i%3==0 and i%5==0:
+        print("fizz and buzz")
+    elif i%3==0:
+        print("fizz")
+    elif i%5==0:
+        print("buzz")
+    else:
+        print(i)"""
+    
+#1d arrays
+import numpy as np
+a = np.array([1,2,4,3,5,7,6,5])
+print(a[-2])
+#arithmetic operations on array
+print(a+2)
+print(a-1)
+print(a*5)
+print(a/2)
+print(a%3)
+
+"""#2d arrays
+b = np.array([[1,2,3],[4,5,6]])
+print(b[1][2])
+print(b[1:,0:])
+
+#advanced indexing
+import numpy as np
+c = np.array([1,2,3,4,5,6,7,8])
+#I need only 2,4,6 so I will create another array
+index = np.array([1,3,5])
+print(c[index])"""
+
 
