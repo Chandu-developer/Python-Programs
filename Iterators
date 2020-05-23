@@ -1,0 +1,77 @@
+
+"""
+They are elegantly implemented within for loops, comprehensions, generators etc. but hidden in plain sight.
+Technically speaking, Python iterator object must implement two special methods, __iter__() and __next__(), 
+collectively called the iterator protocol.
+We use the next() function to manually iterate through all the items of an iterator. 
+When we reach the end and there is no more data to be returned, it will raise StopIteration.
+The __iter__() method returns the iterator object itself. If required, some initialization can be performed.
+
+The __next__() method must return the next item in the sequence. On reaching the end, and in subsequent 
+calls, it must raise StopIteration.
+"""
+
+"""a = [2,1,4,6,3]
+my_iter = iter(a)
+print(a)
+print(next(my_iter))
+print(next(my_iter))
+print(next(my_iter))
+print(my_iter.__next__()) #In this way also we can give
+print(next(my_iter))
+print(next(my_iter)) #once all completing it gives stopiteration error
+
+#or simply we can use for loop
+for i in a:
+    print(i)"""
+
+# A simple generator function
+"""def my_gen():
+    n = 1
+    print('This is printed first')
+    # Generator function contains yield statements
+    yield n
+
+    n += 1
+    print('This is printed second')
+    yield n
+
+    n += 1
+    print('This is printed at last')
+    yield n
+a = my_gen()
+print(next(a))
+print(next(a))
+print(next(a))
+print(next(a))"""
+
+#we can use generators using for loop directly
+# A simple generator function
+def my_gen():
+    n = 1
+    print('This is printed first')
+    # Generator function contains yield statements
+    yield n
+
+    n += 1
+    print('This is printed second')
+    yield n
+
+    n += 1
+    print('This is printed at last')
+    yield n
+
+
+# Using for loop
+for item in my_gen():
+    print(item)
+    
+    
+    
+    
+# Initialize the list
+my_list = [1, 3, 6, 10]
+
+a = (x**2 for x in my_list)
+for i in a:
+    print(a)
