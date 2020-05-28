@@ -1,0 +1,65 @@
+a = [10,30]
+b = [20,70]
+c = []
+d = len(a)
+for i in range(d):
+    c.append(a[i]+b[i])
+print(c)
+
+#increasing salaries of emp's
+class Employee:
+    hike = 1.1 #class variable
+    def details(self,name):
+        self.name = name #instance variable
+        return name
+    def salary(self,sal):
+        self.sal = sal
+        print('After incrementing the emp salary is : ')
+        if sal > 10000:
+            return self.sal*Employee.hike #class variable declaration
+        else:
+            return self.sal
+emp = Employee()
+n = int(input('enter no of salaries : '))
+store_sal = [] 
+store_names = []
+for i in range(n):
+    name = input('Enter names : ')
+    store_names.append(name)
+    salar = int(input('Enter salary : '))
+    store_sal.append(salar)
+    
+for i in range(n):
+    print(emp.details(store_names[i]))
+    print(store_sal[i])
+    print(emp.salary(store_sal[i]))
+    print()
+    
+    
+    
+    class Employee:
+    def naming(self,first,last):
+        self.first = first
+        self.last = last
+    def fullName(self):
+        return self.first+" "+self.last
+emp = Employee()
+print(emp.naming('chandu','kalla'))
+print(emp.fullName())
+
+
+def func(c,d):
+    print('Addition')
+    return c+d
+n = int(input("enter no : "))
+c = []
+d = []
+e = []
+for i in range(n):
+    a = int(input('enter a : '))
+    c.append(a)
+    b = int(input('Enter b : '))
+    d.append(b)
+length = len(c)
+for i in range(length):
+    print(c[i]+d[i])
